@@ -4,12 +4,19 @@
 
 学习步骤：
 * 阅读三遍官网[doc](http://facebook.github.io/react-native/docs/)
-* 结合doc ＋ UIExplorer/TicTacToe/Movies/2048 敲用例
-* 在非常无助的时间也会翻看[中文doc](http://wiki.jikexueyuan.com/project/react-native)
+* 结合doc ＋[官方demo](https://github.com/facebook/react-native/tree/master/Examples)  敲用例
+* 非常无助的时候也会翻看[中文doc](http://wiki.jikexueyuan.com/project/react-native)
 
 ## 介绍
 
-项目基于 `react-native v0.13.2` 开发，磕磕碰碰地写的有些乱，日后完善
+项目基于 `react-native v0.13.2` 开发
+
+`navigator.ios.js` 启动文件
+`demo/` 目录中有大部分js 组件
+`image/` 图片
+`styles/` 样式库
+
+磕磕碰碰地写的有些乱，日后完善
 
 ## 开发环境
 
