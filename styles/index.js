@@ -91,6 +91,10 @@ var Styles = StyleSheet.create({
 	    fontSize: 13,
 	    padding: 5,
     },
+
+    map: {
+        height: 200,
+    }
 });
 
 module.exports = Styles;

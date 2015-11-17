@@ -7,6 +7,8 @@ var MyText = require('./demo/Text.ios.js');
 var MyImage = require('./demo/Image.ios.js');
 var MyDM = require('./demo/DirectManipulation.ios.js');
 var MyLoader = require('./demo/ActivityIndicator.ios.js');
+var MyDatePicker = require('./demo/DatePicker.ios.js');
+var MyMapView = require('./demo/MapView.ios.js');
 
 var {
   StyleSheet,
@@ -24,6 +26,8 @@ var pages = {
 	'Image' : MyImage,
 	'NativeProps' : MyDM,
 	'Loader' : MyLoader,
+	'Date' : MyDatePicker,
+	'Map' : MyMapView,
 
 };
 
