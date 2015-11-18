@@ -9,6 +9,8 @@ var MyDM = require('./demo/DirectManipulation.ios.js');
 var MyLoader = require('./demo/ActivityIndicator.ios.js');
 var MyDatePicker = require('./demo/DatePicker.ios.js');
 var MyMapView = require('./demo/MapView.ios.js');
+var ＭyPicker = require('./demo/Picker.ios.js');
+var ＭyPicker2 = require('./demo/Picker2.ios.js');
 
 var {
   StyleSheet,
@@ -28,6 +30,8 @@ var pages = {
 	'Loader' : MyLoader,
 	'Date' : MyDatePicker,
 	'Map' : MyMapView,
+	'Picker' : ＭyPicker,
+	'Picker2' : ＭyPicker2,
 
 };
 

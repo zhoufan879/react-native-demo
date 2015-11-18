@@ -80,7 +80,7 @@ var Styles = StyleSheet.create({
     	borderBottomWidth: 1,
     },
     panelBody: {
-    	padding: 15,
+    	padding: 10,
     },
 
     textInput: {
