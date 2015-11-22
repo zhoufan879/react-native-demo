@@ -11,6 +11,13 @@ var MyDatePicker = require('./demo/DatePicker.ios.js');
 var MyMapView = require('./demo/MapView.ios.js');
 var ＭyPicker = require('./demo/Picker.ios.js');
 var ＭyPicker2 = require('./demo/Picker2.ios.js');
+var MyProgress = require('./demo/Progress.ios.js');
+var MyScroll = require('./demo/ScrollView.ios.js');
+var MySegmentedControl = require('./demo/SegmentedControl.ios.js');
+var MySlider = require('./demo/Slider.ios.js');
+var MySwitch = require('./demo/Switch.ios.js');
+var MyTabBarIOS = require('./demo/TabBar.ios.js');
+var MyWebView = require('./demo/WebView.ios.js');
 
 var {
   StyleSheet,
@@ -32,20 +39,36 @@ var pages = {
 	'Map' : MyMapView,
 	'Picker' : ＭyPicker,
 	'Picker2' : ＭyPicker2,
-
+	'Progress' : MyProgress,
+	'ScrollView' : MyScroll,
+	'SegmentedControl': MySegmentedControl,
+	'Slider': MySlider,
+	'Switch': MySwitch,
+	'TabBar': MyTabBarIOS,
+	'WebView': MyWebView,
 };
+
+var _arr = [];
+for(var a in pages){
+	_arr.push(a);
+}
 
 var MyListView = React.createClass({
 	getInitialState: function(){
         var _dataSource = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-        var _arr = [];
-        for(var a in pages){
-        	_arr.push(a);
-        }
+        
 		return {
-			dataSource: _dataSource.cloneWithRows(_arr),
+			dataSource: _dataSource.cloneWithRows(_arr)
 		}
 	},
+
+	componentDidMount: function() {
+        var _dataSource = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+		this.setState({
+			dataSource: _dataSource.cloneWithRows(_arr)
+		});
+	},
+
 	handlePress: function(rowData, sectionID, rowID){
 		console.log(rowData, sectionID, rowID);
 		if(this.props && this.props.onPress){
